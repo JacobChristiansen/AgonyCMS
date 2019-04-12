@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand|Yellowtail');
+#LogoEnd
+{
+  font-family: 'Yellowtail', cursive;
+  font-size:.6rem;
+  position:relative;
+  top:7px;
+  color:#009432;
+}
+#LogoStart
+{
+  font-family: 'Just Another Hand', cursive;
+  font-size:2rem;
+  color:#303952;
+}
+.navbar
+{
+  border-bottom:2px solid #c7c7c7;
+}
+.footer
+{
+  margin-top:25px;
+}
+.navbar
+{
+  margin-bottom:25px;
+}
