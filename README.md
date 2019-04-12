@@ -18,3 +18,4 @@ Current state: v0.1 ~ Nothing works, only design.
 
 
 Using Bulma Framework.
+Using Codeigniter 3.1.10.
