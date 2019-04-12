@@ -1,2 +1,2 @@
 # AgonyCMS
-## A CMS for TrinityCore 3.3.5a, with focus on responsiveness.
+A CMS for TrinityCore with focus on Responsiveness.
