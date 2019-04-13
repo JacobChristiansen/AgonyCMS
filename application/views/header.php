@@ -15,6 +15,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://bulma.io">
+        <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
         <font id="LogoStart">Agony</font><font id="LogoEnd">CMS</font>
       </a>
 
@@ -24,7 +25,7 @@
         <span aria-hidden="true"></span>
       </a>
     </div>
-
+    <div class="navbar-end">
     <div id="navbar1" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item">
@@ -47,7 +48,8 @@
         </div>
       </div>
     </div>
+  </div>
   </nav>
-<div style="margin-top:50px;">
-  <img src="http://i.imgur.com/VqzjqWx.png" />
+<div style="margin-top:50px;margin-bottom:15px;" class="image">
+  <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/warcraft-profile_banner-0cf49389139d45ac-480.png" />
 </div>

@@ -22,10 +22,58 @@
       <button class="delete" aria-label="close"></button>
     </header>
     <section class="modal-card-body">
-      <!-- Content ... -->
+        <form>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="email" placeholder="Email" id="signemail">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </p>
+          </div>
+            <div class="field">
+              <p class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="Username" id="signusername">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user-ninja"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </p>
+            </div>
+              <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                  <input class="input" type="Password" placeholder="Password" id="signpass">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-key"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                  <span class="passerror">
+
+                  </span>
+                </p>
+              </div>
+                <div class="field">
+                  <p class="control has-icons-left has-icons-right">
+                    <input class="input" type="password" placeholder="Confirm Password" id="signpassc">
+                    <span class="icon is-small is-left">
+                      <i class="fab fa-keycdn"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </p>
+                </div>
     </section>
     <footer class="modal-card-foot">
-      <button class="button is-success">SIGN UP</button>
+      <button class="button is-success signupsub">SIGN UP</button>
+      </form>
     </footer>
   </div>
 </div>
@@ -81,6 +129,61 @@
         $(".navbar-menu").toggleClass("is-active");
 
     });
+
+
+        //Check if passwords match
+
+        $('#signpassc, #signpass').keyup(function () {
+          if($("#signpass").val() === $("#signpassc").val() ||$("#signpassc").val() === $("#signpass").val())
+          {
+              $("#signpassc").addClass("is-success");
+
+          } else {
+            $("#signpassc").removeClass("is-success");
+          }
+        });
+
+
+        //Check password
+        var special_characters = /([~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<])/;
+        $('#signpass').keyup(function () {
+          if($( this ).val().length >= 5 )
+        {
+          if($(this).val().match(special_characters)) {
+            $(".passerror").html("")
+            $( this ).addClass("is-success");
+          } else {
+              $(".passerror").html("You should include, special characters (! $ etc).")
+              $( this ).removelass("is-success");
+        }
+        } else {
+            $(".passerror").html("Password too short. 5 Characters minimum!")
+            $( this ).removeClass("is-success");
+        }
+        });
+
+        //Check email
+        var email_char = /([@])/
+        $('#signemail').keyup(function () {
+          if($(this).val().match(email_char) && $(this).val().length >= 5)
+          {
+            $(this).addClass("is-success");
+          } else {
+            $(this).removeClass("is-success");
+          }
+        });
+        //Check username
+        $('#signusername').keyup(function () {
+          if($(this).val().length >= 5)
+          {
+            $(this).addClass("is-success");
+          } else {
+            $(this).removeClass("is-success");
+          }
+        });
+
+
+
   });
 
   </script>
