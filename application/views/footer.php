@@ -51,7 +51,8 @@
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
-      Copyrighted 2019 &copy; server-name. Using <font id="LogoStart" style="font-size:1.5rem;">Agony</font><font id="LogoEnd" style="top:0px !important;">CMS</font>.
+      Copyrighted 2019 &copy; server-name.<br />
+       Using <font id="LogoStart" style="font-size:1.5rem;">Agony</font><font id="LogoEnd" style="top:0px !important;">CMS</font>.
     </p>
   </div>
 </footer>
