@@ -14,32 +14,29 @@
           <strong>Joe Caine</strong> <small>@joec41ne</small> <small>35m</small>
           <br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+          <br />
+          <span class="tag is-dark">Tag#1</span>
+          <span class="tag is-dark">Tag#2</span>
+          <span class="tag is-dark">Tag#3</span>
+          <span class="tag is-dark">Tag#4</span>
+          <span class="tag is-dark">Tag#5</span>
+          <span class="tag is-dark">Tag#6</span>
+          <span class="tag is-dark">Tag#7</span>
         </p>
       </div>
-      <nav class="level is-mobile">
-        <div class="level-left">
-          <a class="level-item" aria-label="reply">
-            <span class="icon is-small">
-              <i class="fas fa-reply" aria-hidden="true"></i>
-            </span>
-          </a>
-          <a class="level-item" aria-label="retweet">
-            <span class="icon is-small">
-              <i class="fas fa-retweet" aria-hidden="true"></i>
-            </span>
-          </a>
-          <a class="level-item" aria-label="like">
-            <span class="icon is-small">
-              <i class="fas fa-heart" aria-hidden="true"></i>
-            </span>
-          </a>
-        </div>
-      </nav>
     </div>
   </article>
 </div>
   </div>
   <div class="column">
+        <div class="buttons">
+          <a class="button is-primary signupbut">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light loginbut">
+            Log in
+          </a>
+        </div>
     <nav class="panel">
       <p class="panel-heading">
         UserName Here

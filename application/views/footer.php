@@ -13,6 +13,41 @@
 
 
 </div>
+
+<div class="modal signup">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Sign up</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">SIGN UP</button>
+    </footer>
+  </div>
+</div>
+
+<div class="modal login">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Login</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Login</button>
+    </footer>
+  </div>
+</div>
+
+
+
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
@@ -26,11 +61,21 @@
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script>
   $(document).ready(function() {
+    $(".signupbut").click(function(){
+      $(".signup").toggleClass("is-active");
+    });
+      $(".loginbut").click(function(){
+        $(".login").toggleClass("is-active");
+      });
+    $(".delete").click(function(){
+      $( ".modal" ).removeClass("is-active");
+    });
+    $(".modal-background").click(function(){
+      $( ".modal" ).removeClass("is-active");
+    });
 
-    // Check for click events on the navbar burger icon
     $(".navbar-burger").click(function() {
 
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         $(".navbar-burger").toggleClass("is-active");
         $(".navbar-menu").toggleClass("is-active");
 

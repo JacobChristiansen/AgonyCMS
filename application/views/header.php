@@ -18,14 +18,14 @@
         <font id="LogoStart">Agony</font><font id="LogoEnd">CMS</font>
       </a>
 
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar1">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div id="navbar1" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item">
           Home
@@ -46,18 +46,8 @@
 
         </div>
       </div>
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-light">
-              Log in
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
   </nav>
+<div style="margin-top:50px;">
+  <img src="http://i.imgur.com/VqzjqWx.png" />
+</div>
